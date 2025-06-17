@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITS - Empowering Tomorrow's Tech Leaders</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter for UI, Lexend for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Configuration for new fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Lexend', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Heroicons for high-quality SVG icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="bg-slate-50 font-sans text-slate-800 antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="font-display text-2xl font-bold text-slate-900">
+                    MITS
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-slate-600 hover:text-indigo-600 transition-colors">Services</a>
+                    <a href="#partners" class="text-slate-600 hover:text-indigo-600 transition-colors">Partners</a>
+                    <a href="#testimonials" class="text-slate-600 hover:text-indigo-600 transition-colors">Testimonials</a>
+                </nav>
+                <a href="#join" class="hidden md:inline-block bg-indigo-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-indigo-700 transition-all shadow-sm hover:shadow-md">
+                    Join The Network
+                </a>
+                <!-- Mobile Menu Icon can be added here -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[90vh] min-h-[600px] flex items-center">
+            <div class="absolute inset-0 bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
+                     alt="Diverse group of students collaborating on laptops in a modern office" 
+                     class="w-full h-full object-cover opacity-30">
+            </div>
+            <div class="relative container mx-auto px-6 text-center text-white">
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
+                    <span class="bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                        Launch Your Career
+                    </span>
+                    <br/> in Technology
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
+                    <strong>Our Mission:</strong> To bridge academic theory and professional practice, empowering the next generation of tech leaders with real-world projects, elite mentorship, and unparalleled industry access.
+                </p>
+                <div class="mt-10">
+                    <a href="#join" class="bg-white text-indigo-600 font-bold px-10 py-4 rounded-full text-lg hover:bg-slate-100 transition-transform transform hover:scale-105 shadow-lg">
+                        Start Building Your Future
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- University Partners Section -->
+        <section id="partners" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h3 class="text-center text-sm font-bold uppercase text-slate-500 tracking-widest">
+                    Proudly connecting students from world-class institutions
+                </h3>
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-10 items-center max-w-6xl mx-auto">
+                    <!-- Logos with grayscale hover effect -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/2560px-MIT_logo.svg.png" alt="MIT Logo" class="h-10 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Stanford_University_logo_2012.svg/2560px-Stanford_University_logo_2012.svg.png" alt="Stanford University Logo" class="h-10 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Carnegie_Mellon_University_wordmark.svg/2560px-Carnegie_Mellon_University_wordmark.svg.png" alt="Carnegie Mellon University Logo" class="h-8 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/UC_Berkeley_seal.svg/2048px-UC_Berkeley_seal.svg.png" alt="UC Berkeley Logo" class="h-14 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Harvard_shield_wreath.svg/1200px-Harvard_shield_wreath.svg.png" alt="Harvard University Logo" class="h-14 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Georgia_Tech_logo.svg/2560px-Georgia_Tech_logo.svg.png" alt="Georgia Tech Logo" class="h-14 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/University_of_Illinois_Block_I.svg/2048px-University_of_Illinois_Block_I.svg.png" alt="University of Illinois Logo" class="h-12 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Cornell_University_seal.svg/2048px-Cornell_University_seal.svg.png" alt="Cornell University Logo" class="h-14 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/University_of_Washington_Block_W_logo_purple_dark_background.svg/2560px-University_of_Washington_Block_W_logo_purple_dark_background.svg.png" alt="University of Washington Logo" class="h-10 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Caltech_logo.svg/2560px-Caltech_logo.svg.png" alt="Caltech Logo" class="h-8 mx-auto filter grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition duration-300">
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Do / Services Section -->
+        <section id="services" class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-display text-4xl font-bold text-slate-900">The MITS Advantage</h2>
+                    <p class="mt-4 text-lg text-slate-600">We provide the tools, network, and experience you can't get in a classroom.</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-3 gap-12 text-center">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+                           <ion-icon name="code-slash-outline" class="text-3xl"></ion-icon>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mt-6">Hands-on Projects</h3>
+                        <p class="mt-2 text-slate-600">Build your portfolio by contributing to real-world projects for startups and established tech companies.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-purple-100 text-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+                           <ion-icon name="people-outline" class="text-3xl"></ion-icon>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mt-6">Expert Mentorship</h3>
+                        <p class="mt-2 text-slate-600">Get guidance from a network of industry veterans at Google, Meta, Amazon, and leading startups.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-cyan-100 text-cyan-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+                           <ion-icon name="rocket-outline" class="text-3xl"></ion-icon>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mt-6">Career Gateway</h3>
+                        <p class="mt-2 text-slate-600">Access exclusive internships, job postings, and networking events to fast-track your career.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Statistics Section -->
+        <section id="network-stats" class="bg-indigo-700 text-white">
+            <div class="container mx-auto px-6 py-20">
+                <div class="grid md:grid-cols-3 gap-12 text-center">
+                    <div>
+                        <p class="font-display text-5xl font-bold">50K+</p>
+                        <p class="mt-2 text-indigo-200 text-lg font-medium">Social Media Followers</p>
+                    </div>
+                    <div>
+                        <p class="font-display text-5xl font-bold">10,000+</p>
+                        <p class="mt-2 text-indigo-200 text-lg font-medium">Active Student Members</p>
+                    </div>
+                    <div>
+                        <p class="font-display text-5xl font-bold">500+</p>
+                        <p class="mt-2 text-indigo-200 text-lg font-medium">Industry Projects Completed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-display text-4xl font-bold text-slate-900">Don't Just Take Our Word For It</h2>
+                    <p class="mt-4 text-lg text-slate-600">See what our members are saying about their MITS experience.</p>
+                </div>
+                <div class="mt-16 grid lg:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-slate-50 p-8 rounded-lg">
+                        <blockquote class="text-slate-600 text-lg">"MITS gave me the confidence and the portfolio to land my dream internship at a FAANG company. The mentorship was invaluable."</blockquote>
+                        <div class="flex items-center mt-6">
+                            <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="Photo of Sarah Chen" class="w-12 h-12 rounded-full object-cover">
+                            <div class="ml-4">
+                                <p class="font-bold text-slate-900">Sarah Chen</p>
+                                <p class="text-sm text-slate-500">Computer Science, Stanford University</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-slate-50 p-8 rounded-lg">
+                        <blockquote class="text-slate-600 text-lg">"The project I worked on through MITS was the main talking point in all my interviews. It's a game-changer for practical experience."</blockquote>
+                        <div class="flex items-center mt-6">
+                            <img src="https://i.pravatar.cc/150?u=a04258114e29026702d" alt="Photo of Michael Rodriguez" class="w-12 h-12 rounded-full object-cover">
+                            <div class="ml-4">
+                                <p class="font-bold text-slate-900">Michael Rodriguez</p>
+                                <p class="text-sm text-slate-500">Information Systems, Carnegie Mellon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="join" class="bg-slate-800">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="font-display text-4xl font-bold text-white">Ready to Launch Your Tech Career?</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">Join a thriving community of builders, innovators, and future leaders today. Membership is free for all affiliated students.</p>
+                <div class="mt-8">
+                    <a href="#" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold px-10 py-4 rounded-full text-lg hover:opacity-90 transition-opacity transform hover:scale-105 shadow-lg">
+                        Apply to Join MITS
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div class="md:col-span-1">
+                    <a href="#" class="font-display text-2xl font-bold text-white">MITS</a>
+                    <p class="mt-4 text-sm">Empowering the next generation of tech leaders.</p>
+                </div>
+                <div class="md:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-bold text-white tracking-wide">Explore</h4>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                            <li><a href="#partners" class="hover:text-white transition">Partners</a></li>
+                            <li><a href="#testimonials" class="hover:text-white transition">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white tracking-wide">Community</h4>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                            <li><a href="#" class="hover:text-white transition">Events</a></li>
+                            <li><a href="#" class="hover:text-white transition">GitHub Projects</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white tracking-wide">Social</h4>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+                            <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+                            <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-slate-700 text-center text-sm">
+                <p>© 2024 Micro Information Technology Services. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
